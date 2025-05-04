@@ -44,7 +44,7 @@
   background-attachment: fixed;
   min-inline-size: 320px;
   min-block-size: 100dvb;
-  font-variation-settings: var(--font-weight-regular);
+  font-variation-settings: 'wght' 400;
 }
 
 .filter_low-saturation {
