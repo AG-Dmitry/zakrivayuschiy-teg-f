@@ -1,1 +1,76 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+
+:root {
+
+  /* переменные цвета */
+
+  --color-main: #000;
+  --color-background: #fff;
+  --color-stroke: var(--color-background);
+  --color-accent: #f00;
+  --gradient-background:
+    repeating-linear-gradient(
+      to right,
+      #d3d3d3 0 2px,
+      transparent 2px 4px
+    ),
+    repeating-linear-gradient(
+      to bottom,
+      #d3d3d3 0 2px,
+      transparent 2px 4px
+    ),
+    linear-gradient(
+      to bottom,
+      #e7e7e7 .01%,
+      #1a1a1a
+    );
+
+  /* переменные фильтров */
+
+  --filter-low-saturation: saturate(20%);
+  --filter-high-saturation: saturate(350%);
+  --filter-hue-rotated: hue-rotate(30deg);
+  --filter-color-inverted: invert(80%);
+  --filter-sepia: sepia(90%);
+  --filter-blur: blur(10px);
+  --filter-mixed: sepia(10%) saturate(50%) hue-rotate(170deg) brightness(90%) contrast(150%);
+
+  /* переменные шрифта */
+
+  --font-family-main: 'Inter Variable', sans-serif;
+  --font-family-accent: 'Press Start 2P', monospace, sans-serif;
+  --font-weight-regular: 'wght' 400;
+  --font-weight-bold: 'wght' 700;
+  --font-size-header: clamp(0.875rem, 0.677rem + 0.845vi, 1.438rem);
+  --font-size-header-accent: clamp(3.063rem, 2.71rem + 1.502vi, 4.063rem);
+  --font-size-normal: 18px;
+  --font-size-small: 14px;
+  --line-heigth-header: calc(var(--font-size-header) + var(--gap-header));
+  --line-height-title: 1.2222;
+  --line-height-paragraph: 1.1667;
+  --line-height-dialog: 1.5;
+  --text-transform-uppercase: uppercase;
+
+  /* переменные размеров */
+
+  --inline-size-content: clamp(23.188rem, 15.947rem + 30.892vi, 43.75rem);
+  --border-width: 2px;
+
+  /* переменные отсупов */
+
+  --margin-main: 25px;
+  --margin-outer-header: 100px;
+  --magrin-top-header: clamp(7.5rem, 7.324rem + 0.751vi, 8rem);
+  --magrin-bottom-header: calc(var(--magrin-top-header) - var(--gap-header) / 2);
+  --margin-section: 50px;
+  --padding-wide: 10px;
+  --padding-narrow: 4px;
+  --padding-dialog: 30px;
+  --gap-header: 20px;
+  --gap-paragraph: 27px;
+  --gap-buttons: 4px;
+
+  /* переменные границ */
+
+  --border-main: solid var(--border-width) var(--color-main);
+}
