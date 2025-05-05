@@ -40,7 +40,7 @@
   --font-family-main: 'Inter Variable', sans-serif;
   --font-family-accent: 'Press Start 2P', monospace, sans-serif;
   --font-weight-regular: 400;
-  --font-weight-bold: 'wght' 785;
+  --font-weight-bold: 785;
   --font-size-header: clamp(0.875rem, 0.677rem + 0.845vi, 1.438rem);
   --font-size-header-accent: clamp(3.063rem, 2.71rem + 1.502vi, 4.063rem);
   --font-size-normal: 18px;

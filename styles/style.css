@@ -10,30 +10,6 @@
 
 */
 
-@keyframes heart-scale {
-
-  from {
-    transform: scale(1);
-  }
-
-  to {
-    transform: scale(1.25);
-  }
-
-}
-
-@keyframes sparks-flash {
-
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-
-}
-
 .page {
   color: var(--color-main);
   font-family: var(--font-family-main);
@@ -44,7 +20,7 @@
   background-attachment: fixed;
   min-inline-size: 320px;
   min-block-size: 100dvb;
-  font-variation-settings: 'wght' 400;
+  font-variation-settings: 'wght' var(--font-weight-regular);
 }
 
 .filter_low-saturation {
@@ -175,7 +151,7 @@
   margin: var(--padding-narrow) var(--padding-wide);
   font-size: inherit;
   line-height: var(--line-height-title);
-  font-variation-settings: var(--font-weight-bold);
+  font-variation-settings: 'wght' var(--font-weight-bold);
 }
 
 .card__image-container {
